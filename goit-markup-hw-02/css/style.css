@@ -53,8 +53,19 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
   text-decoration: none;
+}
+
+.logo-web{
+  color: var(--logo-color);
+}
+
+.logo-studio-header{
+  color: #212121;
+}
+
+.logo-studio-footer {
+  color: #ffffff;
 }
 
 /*--------------------------------Main-------------------------------*/
