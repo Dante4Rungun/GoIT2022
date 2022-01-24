@@ -144,8 +144,6 @@ a {
 
 .order-container {
   background: #2f303a;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-header {
@@ -159,9 +157,13 @@ a {
   padding: 200px 0px 0px;
 }
 
+.button-container{
+  padding: 0 700px 200px;
+  margin-top: 30px;
+}
+
 .order-service-btn {
-  min-width: 200px;
-  margin: 30px 700px 200px;
+  min-width: 200px; 
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -188,8 +190,7 @@ a {
   display: flex;
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0 215px;
-  padding: 0;
+  padding: 0 215px;
 }
 
 .specials-list-item {
@@ -215,11 +216,6 @@ a {
 
 /*--------------------------What we do-------------------------*/
 
-.producing-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .producing-list {
   display: flex;
   padding: 0 215px 94px;
@@ -238,9 +234,6 @@ a {
   padding-bottom: 50px;
   padding-top: 94px;
   color: var(--second-header-color);
-}
-
-.producing-list-item {
 }
 
 /*--------------------------Team-------------------------*/
