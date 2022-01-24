@@ -42,7 +42,7 @@ li {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -50,7 +50,9 @@ a {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -79,7 +81,6 @@ a {
 
 .header-connect {
   margin-left: auto;
-  padding-right: 215px;
 }
 
 .header-link-menu {
@@ -105,7 +106,7 @@ a {
   color: var(--header-contacts-text-color);
 }
 
-.header-link-contacts + .header-link-contacts{
+.header-link-contacts + .header-link-contacts {
   margin-left: 50px;
 }
 
@@ -120,7 +121,6 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  padding-left: 215px;
   width: 145px;
 }
 
@@ -138,12 +138,15 @@ a {
 /*--------------------------------Main-------------------------------*/
 
 /*--------------------------Order-------------------------*/
-.order-service {
-  margin-bottom: 94px;
-}
-
 .order-container {
   background: #2f303a;
+}
+
+.order-content {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-header {
@@ -154,16 +157,15 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: var(--main-header-color);
-  padding: 200px 0px 0px;
 }
 
-.button-container{
-  padding: 0 700px 200px;
+.button-container {
   margin-top: 30px;
 }
 
 .order-service-btn {
-  min-width: 200px; 
+  min-width: 200px;
+  margin-top: 30px;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -181,16 +183,14 @@ a {
 }
 
 /*--------------------------Specials-------------------------*/
-
-.specials-container {
-  display: flex;
+.specials-content {
+  padding-top: 94px;
 }
 
 .specials-list {
   display: flex;
   font-size: 14px;
   letter-spacing: 0.03em;
-  padding: 0 215px;
 }
 
 .specials-list-item {
@@ -216,9 +216,13 @@ a {
 
 /*--------------------------What we do-------------------------*/
 
+.producing-content {
+  padding: 94px 0;
+}
+
 .producing-list {
   display: flex;
-  padding: 0 215px 94px;
+  margin-top: 50px;
 }
 
 .producing-list-item + .producing-list-item {
@@ -231,8 +235,6 @@ a {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
-  padding-top: 94px;
   color: var(--second-header-color);
 }
 
@@ -244,24 +246,26 @@ a {
   letter-spacing: 0.03em;
 }
 
-.team-container {
+.team-content {
+  padding: 94px 0;
   background: #f5f4fa;
 }
 
 .team-list {
   display: flex;
-  padding: 0px 215px 94px;
-  margin-left: -30px;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .team-list-item {
   background: #ffffff;
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item + .team-list-item {
+  margin-left: 30px;
 }
 
 .team-name {
@@ -277,10 +281,13 @@ a {
 }
 /*------------------------------Portfolio----------------------*/
 
+.portfolio-content {
+  padding: 94px 0;
+}
+
 .portfolio-filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .portfolio-filter-list-item + .portfolio-filter-list-item {
@@ -300,6 +307,7 @@ a {
   background: #f5f4fa;
   border-radius: 4px;
   min-height: 38px;
+  text-align: center;
   border: 0;
 }
 
@@ -309,10 +317,11 @@ a {
 
 .portfolio-list {
   display: flex;
-  padding: 50px 215px 94px;
   margin-left: -30px;
+  margin-bottom: -30px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 54px;
 }
 
 .portfolio-list-item {
@@ -323,13 +332,15 @@ a {
   margin-bottom: 30px;
 }
 
+.item-description {
+  padding: 20px 24px;
+}
+
 .portfolio-list-item-header {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 0 24px;
-  margin: 20px 0 4px;
   color: var(--third-header-color);
 }
 
@@ -337,7 +348,7 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding: 0 24px 20px;
+  margin-top: 4px;
 }
 
 /*------------------------------Footer----------------------*/
@@ -347,21 +358,21 @@ a {
   letter-spacing: 0.03em;
 }
 
-.footer-container {
+.footer-content {
   display: flex;
   flex-direction: column;
   background: #2f303a;
+  padding: 60px 0;
 }
 
 .logo-footer {
-  padding: 60px 0 20px 215px;
   margin-right: 0;
 }
 
 .adress {
   display: flex;
   flex-direction: column;
-  padding: 0 0 60px 215px;
+  margin-top: 20px;
 }
 
 .footer-adress {
