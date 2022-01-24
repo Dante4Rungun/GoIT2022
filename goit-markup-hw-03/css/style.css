@@ -79,7 +79,7 @@ a {
 
 .header-connect {
   margin-left: auto;
-  margin-right: 215px;
+  padding-right: 215px;
 }
 
 .header-link-menu {
@@ -103,6 +103,9 @@ a {
 
 .header-link-contacts {
   color: var(--header-contacts-text-color);
+}
+
+.header-link-contacts + .header-link-contacts{
   margin-left: 50px;
 }
 
@@ -158,7 +161,6 @@ a {
 
 .order-service-btn {
   min-width: 200px;
-  height: 50px;
   margin: 30px 700px 200px;
   font-family: inherit;
   font-weight: bold;
