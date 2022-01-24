@@ -245,8 +245,6 @@ a {
 }
 
 .team-container {
-  display: flex;
-  flex-direction: column;
   background: #f5f4fa;
 }
 
@@ -279,18 +277,10 @@ a {
 }
 /*------------------------------Portfolio----------------------*/
 
-.container-porfolio {
-  display: flex;
-  flex-direction: column;
-}
-
 .portfolio-filter-list {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-}
-
-.portfolio-filter-list-item {
 }
 
 .portfolio-filter-list-item + .portfolio-filter-list-item {
@@ -371,7 +361,7 @@ a {
 .adress {
   display: flex;
   flex-direction: column;
-  margin: 0 0 60px 215px;
+  padding: 0 0 60px 215px;
 }
 
 .footer-adress {
