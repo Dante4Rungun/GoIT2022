@@ -65,13 +65,13 @@ a {
   letter-spacing: 0.02em;
   align-items: baseline;
   background: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -138,7 +138,7 @@ a {
 /*--------------------------------Main-------------------------------*/
 
 /*--------------------------Order-------------------------*/
-.order-container {
+.order-service {
   background: #2f303a;
 }
 
@@ -164,6 +164,7 @@ a {
 }
 
 .order-service-btn {
+  padding: 10px 32px;
   min-width: 200px;
   margin-top: 30px;
   font-family: inherit;
@@ -183,18 +184,15 @@ a {
 }
 
 /*--------------------------Specials-------------------------*/
-.specials-content {
+.specials {
   padding-top: 94px;
 }
 
 .specials-list {
   display: flex;
-  font-size: 14px;
-  letter-spacing: 0.03em;
 }
 
-.specials-list-item {
-  width: calc(100% / 4 - 30px);
+.specials-list-item + .specials-list-item {
   margin-left: 30px;
 }
 
@@ -203,6 +201,8 @@ a {
 }
 
 .specials-name {
+  font-size: 14px;
+  letter-spacing: 0.03em;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
@@ -210,13 +210,15 @@ a {
 }
 
 .specials-desc {
+  font-size: 14px;
+  letter-spacing: 0.03em;
   line-height: 1.71;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
-/*--------------------------What we do-------------------------*/
+/*--------------------------producing-------------------------*/
 
-.producing-content {
+.producing {
   padding: 94px 0;
 }
 
@@ -241,14 +243,11 @@ a {
 /*--------------------------Team-------------------------*/
 
 .team {
+  padding: 94px 0;
+  background: #f5f4fa;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.team-content {
-  padding: 94px 0;
-  background: #f5f4fa;
 }
 
 .team-list {
@@ -268,20 +267,23 @@ a {
   margin-left: 30px;
 }
 
+.team-member {
+  padding: 30px 0;
+}
+
 .team-name {
   font-weight: 500;
   text-align: center;
-  padding: 30px 0px 10px;
   color: var(--team-names-color);
 }
 
 .team-pos {
   text-align: center;
-  padding-bottom: 30px;
+  margin-top: 10px;
 }
 /*------------------------------Portfolio----------------------*/
 
-.portfolio-content {
+.portfolio {
   padding: 94px 0;
 }
 
@@ -356,12 +358,12 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background: #2f303a;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-  background: #2f303a;
   padding: 60px 0;
 }
 
