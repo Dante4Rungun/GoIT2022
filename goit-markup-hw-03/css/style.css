@@ -91,9 +91,6 @@ a {
   display: flex;
 }
 
-.navigation-list-item {
-}
-
 .navigation-list-item + .navigation-list-item {
   margin-left: 50px;
 }
@@ -140,10 +137,10 @@ a {
 /*--------------------------Order-------------------------*/
 .order-service {
   background: #2f303a;
+  padding: 200px 0;
 }
 
-.order-content {
-  padding: 200px 0;
+.order-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,6 +187,10 @@ a {
 
 .specials-list {
   display: flex;
+}
+
+.specials-list-item{
+  width: 270px;
 }
 
 .specials-list-item + .specials-list-item {
@@ -360,12 +361,12 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background: #2f303a;
+  padding: 60px 0;
 }
 
-.footer-content {
+.footer-container {
   display: flex;
   flex-direction: column;
-  padding: 60px 0;
 }
 
 .logo-footer {
