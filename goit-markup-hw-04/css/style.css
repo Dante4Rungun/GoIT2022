@@ -432,10 +432,12 @@ a {
 }
 
 .portfolio-filter-list-item:hover .portfolio-filter-btn{
+  color: #FFFFFF;
   background: #2196F3;
 }
 
 .portfolio-filter-list-item:focus .portfolio-filter-btn{
+  color: #FFFFFF;
   background: #2196F3;
 }
 
@@ -478,12 +480,10 @@ a {
 }
 
 .portfolio-list-item:hover{
-  background: #2196F3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list-item:focus{
-  background: #2196F3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
