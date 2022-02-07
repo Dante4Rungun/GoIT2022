@@ -115,10 +115,12 @@ a {
 
 .header-link-menu:hover {
   color: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-menu:focus {
   color: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts {
@@ -138,18 +140,22 @@ a {
 
 .header-link-contacts:hover {
   color: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts:hover .contact-icon {
   fill: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts:focus {
   color: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts:focus .contact-icon {
   fill: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -388,18 +394,22 @@ a {
 
 .team-social-link:hover {
   background-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover .team-social-icon {
   fill: rgba(255, 255, 255, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:focus {
   background-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:focus .team-social-icon {
   fill: rgba(255, 255, 255, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*------------------------------Regular clients----------------------*/
 
@@ -434,18 +444,22 @@ a {
 
 .clients-item-link:hover {
   border-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item-link:hover .client-icon {
   fill: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item-link:focus {
   border-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item-link:focus .client-icon {
   fill: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*------------------------------Portfolio----------------------*/
 
@@ -466,22 +480,26 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-list-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-list-item:hover .portfolio-filter-btn {
   color: #ffffff;
   background: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-list-item:focus .portfolio-filter-btn {
   color: #ffffff;
   background: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-btn {
@@ -546,15 +564,23 @@ a {
 .portfolio-list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .portfolio-overlay {
   transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:focus .portfolio-overlay {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-description {
@@ -614,10 +640,12 @@ a {
 
 .footer-contacts:hover {
   color: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts:focus {
   color: var(--contacts-hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links {
@@ -659,10 +687,12 @@ a {
 
 .footer-social-link:hover {
   background-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:focus {
   background-color: rgba(33, 150, 243, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*------------------------------backdrop----------------------*/
 .backdrop {
@@ -702,7 +732,7 @@ a {
 
 .modal-close-icon {
   fill: #000000;
-}
+ }
 
 .is-hidden {
   opacity: 0;
