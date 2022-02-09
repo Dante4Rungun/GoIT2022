@@ -564,7 +564,7 @@ a {
 .portfolio-overlay {
   position: absolute;
   height: 100%;
-  width: auto;
+  width: 100%; 
   padding: 63px 24px;
   top: 0;
   left: 0;
