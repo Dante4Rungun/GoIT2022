@@ -1001,10 +1001,18 @@ a {
   position: absolute;
   width:11px;
   height:8px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #check-agree:checked + div{
   background-color: #2196f3;
+}
+
+#check-agree:checked + div .custom-checkbox{
+  fill: #FFFFFF;
 }
 
 .cond-agree {
