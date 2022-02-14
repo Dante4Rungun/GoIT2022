@@ -916,8 +916,6 @@ a {
 .modal-icon{
   position: absolute;
   padding-left: 14px;
-  width: 15px;
-  height: 15px;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -999,9 +997,6 @@ a {
 
 .custom-checkbox{
   position: absolute;
-  width:11px;
-  height:8px;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
