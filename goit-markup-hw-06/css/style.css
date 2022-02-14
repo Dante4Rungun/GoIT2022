@@ -766,10 +766,23 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
+}
+
+.modal-close:hover .modal-close-icon{
+  fill: #2196f3;
+}
+
+.modal-close:focus .modal-close-icon{
+  fill: #2196f3;
 }
 
 .modal-close-icon {
   fill: #000000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .is-hidden {
