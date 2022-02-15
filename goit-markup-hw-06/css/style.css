@@ -1005,7 +1005,9 @@ a {
 
 .custom-checkbox{
   position: absolute;
-  transition-property: fill;
+  fill: #FFFFFF;
+  opacity: 0;
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1015,7 +1017,7 @@ a {
 }
 
 #check-agree:checked + div .custom-checkbox{
-  fill: #FFFFFF;
+  opacity: 1;
 }
 
 .cond-agree {
