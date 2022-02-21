@@ -1,0 +1,91 @@
+.agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-bottom: 30px;
+
+    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 16px;
+    }
+
+    &__accept {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__check-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 2px;
+        z-index: 1;
+      
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__checkbox {
+        position: absolute;
+        fill: #ffffff;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #check-agree:checked + div {
+        background-color: #2196f3;
+    }
+      
+    #check-agree:checked + div &__checkbox {
+        opacity: 1;
+    }
+
+    &__accept-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-left: 9px;
+        color: #757575;
+    }
+
+    &__link {
+        color: #2196f3;
+        text-decoration: underline;
+    }
+
+    &__submit {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 200px;
+        padding: 10px 55px;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        cursor: pointer;
+        border: 0;
+      
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+    }
+}
