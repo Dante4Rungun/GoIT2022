@@ -1,0 +1,90 @@
+.header-modal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    padding: 48px 40px;
+    top: 0;
+    left: 0;
+    animation-name: modal-close-open;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: initial;
+}
+
+.nav-modal-list{
+    display: flex;
+    flex-direction: column;
+    
+
+    &__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47/40);
+        letter-spacing: 0.02em;
+        color: #212121;
+
+        &:hover{
+            color: var(--accent-color);
+        }
+
+        &:focus{
+            color: var(--accent-color);
+        }
+    }
+
+    &__item + &__item{
+        margin-top: 32px;
+    }
+
+}
+
+.modal-connect{
+    display: flex;
+    flex-direction: column;
+    margin-top: 302px;
+
+    &__tel-link{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40/34);
+        
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    }
+
+    &__mail-link {
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28/24);
+        letter-spacing: 0.02em;
+
+        color: #757575;
+    }
+}
+
+.modal-social-list{
+    display: flex;
+    margin-top: 64px;
+
+    &__item{
+        padding: 0 10px 0 0;
+    }
+
+    &__item + &__item{
+        padding: 0 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__link{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22/18);
+        letter-spacing: 0.02em;
+        color:var(--accent-color)
+    }
+}

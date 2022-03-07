@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./sass/main.css">   
+    <title>Web Studio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">       
+            <a href="" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <button class="toggle" header-modal-open>
+                <svg class="toggle__item" width="24" height="16">
+                    <use href="./images/symbol-toggle.svg#toggle-menu"></use>
+                </svg>
+            </button>     
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="./index.html" class="nav-list__link current">Студия</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Портфолио</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="connect">
+                <a href="mailto:info@devstudio.com" class="connect__contacts">
+                    <svg class="connect__icon" width="16" height="12">
+                        <use href="./images/symbol-contacts.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="connect__contacts">
+                    <svg class="connect__icon" width="10" height="16">
+                        <use href="./images/symbol-contacts.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn">Все</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn">Веб-сайты</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn">Приложения</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn">Дизайн</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="portfolio-list">
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio1-mobile.jpg 1x,
+                                            ./images/portfolio1-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio1-tab.jpg 1x,
+                                            ./images/portfolio1-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster1 1x, 
+                                            ./images/portfolio1-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster1.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay">
+                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                шпионажа и атак на защищённые сервера конкурентов.
+                            </p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Технокряк</h3>
+                            <p class="portfolio-list__type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio2-mobile.jpg 1x,
+                                            ./images/portfolio2-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio2-tab.jpg 1x,
+                                            ./images/portfolio2-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster2 1x, 
+                                            ./images/portfolio2-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster2.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Постер New Orlean vs Golden Star</h3>
+                            <p class="portfolio-list__type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio3-mobile.jpg 1x,
+                                            ./images/portfolio3-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio3-tab.jpg 1x,
+                                            ./images/portfolio3-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster3 1x, 
+                                            ./images/portfolio3-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster3.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Ресторан Seafood</h3>
+                            <p class="portfolio-list__type">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio4-mobile.jpg 1x,
+                                            ./images/portfolio4-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio4-tab.jpg 1x,
+                                            ./images/portfolio14-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster4 1x, 
+                                            ./images/portfolio4-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster4.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Проект Prime</h3>
+                            <p class="portfolio-list__type">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio5-mobile.jpg 1x,
+                                            ./images/portfolio5-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio5-tab.jpg 1x,
+                                            ./images/portfolio5-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster5 1x, 
+                                            ./images/portfolio5-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster5.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Проект Boxes</h3>
+                            <p class="portfolio-list__type">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio6-mobile.jpg 1x,
+                                            ./images/portfolio6-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio6-tab.jpg 1x,
+                                            ./images/portfolio6-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster6 1x, 
+                                            ./images/portfolio6-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster6.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Inspiration has no Borders</h3>
+                            <p class="portfolio-list__type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio7-mobile.jpg 1x,
+                                            ./images/portfolio7-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio7-tab.jpg 1x,
+                                            ./images/portfolio7-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster7 1x, 
+                                            ./images/portfolio7-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster7.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Издание Limited Edition</h3>
+                            <p class="portfolio-list__type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio18-mobile.jpg 1x,
+                                            ./images/portfolio8-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio8-tab.jpg 1x,
+                                            ./images/portfolio8-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster8 1x, 
+                                            ./images/portfolio8-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster8.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Проект LAB</h3>
+                            <p class="portfolio-list__type">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <div class="wrap">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio9-mobile.jpg 1x,
+                                            ./images/portfolio9-mobile-2x.jpg 2x"
+                                    media="min-width: 480px"
+                                />
+                                <source
+                                    srcset="./images/portfolio9-tab.jpg 1x,
+                                            ./images/portfolio9-tab-2x.jpg 2x"
+                                    media="min-width: 768px"
+                                />
+                                <source
+                                    srcset="./images/poster9 1x, 
+                                            ./images/portfolio9-desk-2x 2x"
+                                    media="min-width: 1200px"
+                                />
+                                <img src="images/poster9.jpg" alt="Технокряк">
+                            </picture>
+                            <p class="overlay portfolio-overlay"></p>
+                        </div>
+                        <div class="portfolio-list__desc">
+                            <h3 class="portfolio-list__name">Growing Business</h3>
+                            <p class="portfolio-list__type">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <address class="footer-connect">
+                <a href="#" class="logo logo__footer"><span class="logo__web">Web</span><span
+                        class="logo__studio-footer">Studio</span></a>
+                <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+                    target="_blank" rel="noopener noreferrer nofollow" class="footer-connect__adress">Киев, пр-т Леси Украинки,
+                    26</a>
+                <a href="mailto:" class="footer-connect__contacts">info@example.com</a>
+                <a href="tel:+380991111111" class="footer-connect__contacts">+38 099 111 11 11</a>
+            </address>
+            <div class="footer-social">
+                <p class="footer-social__join">Присоединяйтесь</p>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/symbol-social.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/symbol-social.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/symbol-social.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/symbol-social.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <p class="subscribe__titel">Подпишитесь на рассылку</p>
+                <div class="subscribe__area">
+                    <input type="email" class="subscribe__input" placeholder="E-mail">
+                    <button class="subscribe__submit" type="submit">
+                        Подписаться
+                        <svg class="subscribe__icon">
+                            <use href="./images/symbol-subscribe.svg#icon-send" width="24" height="24"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-close" data-modal-close>
+                <svg class="btn-close__icon" width="11" height="11">
+                    <use href="./images/symbol-close.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="contact-form" role="group" aria-labelledby="contact-details-head">
+                <p class="contact-form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <label for="" class="contact-form__label">
+                    <p class="contact-form__name">Имя</p>
+                    <div class="contact-form__inblock">
+                        <input type="text" class="contact-form__input" required>
+                        <svg class="contact-form__icon" width="12" height="12">
+                            <use href="./images/symbol-contact-form.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="contact-form__label">
+                    <p class="contact-form__name">Телефон</p>
+                    <div class="contact-form__inblock">
+                        <input type="tel" class="contact-form__input" required>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/symbol-contact-form.svg#icon-tel"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="contact-form__label">
+                    <p class="contact-form__name">Почта</p>
+                    <div class="contact-form__inblock">
+                        <input type="email" class="contact-form__input">
+                        <svg class="contact-form__icon" width="15" height="12">
+                            <use href="./images/symbol-contact-form.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="contact-form__label">
+                    <p class="contact-form__name">Комментарий</p>
+                    <textarea name="" id="" class="contact-form__text" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="agree">
+                    <div class="check">
+                        <input type="checkbox" id="check-agree" name="term-check-agree" value="js" class="check__inp" required>
+                        <div class="checkbox" width="16" height="15">
+                            <svg class="checkbox__icon" width="11" height="8">
+                                <use href="./images/symbol-contact-form.svg#icon-check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="agree__accept">Соглашаюсь с рассылкой и принимаю <a class="agree__link">Условия договора</a></p>
+                </label>
+                <div class="submit">
+                    <button class="submit__btn" type="submit">Отправить</button>  
+                </div>  
+            </form>       
+        </div>
+    </div>
+    <div class="backdrop is-hidden" header-modal>
+        <div class="header-modal">
+            <button type="button" class="btn-close btn-close-header" header-modal-close>
+                <svg class="btn-close__icon" width="19" height="19">
+                    <use href="./images/symbol-close.svg#icon-close-sec"></use>
+                </svg>
+            </button>
+            <nav class="nav-modal">
+                <ul class="nav-modal-list">
+                    <li class="nav-modal-list__item">
+                        <a href="#" class="nav-modal-list__link">Студия</a>
+                    </li>
+                    <li class="nav-modal-list__item">
+                        <a href="./portfolio.html" class="nav-modal-list__link">Портфолио</a>
+                    </li>
+                    <li class="nav-modal-list__item">
+                        <a href="" class="nav-modal-list__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="modal-connect">
+                <a href="tel:+380961111111" class="modal-connect__tel-link">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="modal-connect__mail-link">info@devstudio.com</a>
+            </div>
+            <div class="modal-social">
+                <ul class="modal-social-list">
+                    <li class="modal-social-list__item">
+                        <a href="" class="modal-social-list__link">Instagram</a>
+                    </li>
+                    <li class="modal-social-list__item">
+                        <a href="" class="modal-social-list__link">Twitter</a>
+                    </li>
+                    <li class="modal-social-list__item">
+                        <a href="" class="modal-social-list__link">Facebook</a>
+                    </li>
+                    <li class="modal-social-list__item">
+                        <a href="" class="modal-social-list__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

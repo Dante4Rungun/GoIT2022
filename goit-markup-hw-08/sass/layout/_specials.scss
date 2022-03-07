@@ -1,0 +1,64 @@
+.specials {
+    padding: 94px 0;
+}
+
+.specials-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    @include desk {
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        width: 450px;
+
+        @include desk{
+            width: 270px;
+        }   
+    }
+
+    &__item + &__item{
+        margin-top: 30px;
+
+        @include desk{
+            margin: 0 0 0 30px;
+        }
+    }
+
+    &__icon {
+        @include align-list;
+        justify-content: center;
+        height: 120px;
+        width: 100%;
+        @include desk {
+            width: 270px;
+        }
+        background-color: rgba(245, 244, 250, 1);
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        font-weight: bold;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--third-header-color);
+        text-align: center;
+        
+        @include desk {
+            text-align: start;
+        }
+    }
+  
+    &__desc {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+        margin-top: 10px; 
+    }
+}

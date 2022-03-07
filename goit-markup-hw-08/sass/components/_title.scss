@@ -1,0 +1,15 @@
+.title {
+    font-weight: 900;
+    font-size: 26px;
+    font-style: normal;
+    line-height: calc(42/26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-header-color); 
+
+    @include desk{
+        font-size: 44px;
+        line-height: calc(60/44); 
+    }
+}
