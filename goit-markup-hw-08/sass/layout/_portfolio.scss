@@ -1,0 +1,154 @@
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio {
+    padding: 60px 0;
+
+    @include desk{
+        padding: 94px 0;
+    }
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px 0 0 -8px;
+
+    @include tab{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 15px 0 0 8px;
+
+        transition-property: box-shadow, border-radius;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+        }
+    
+        &:focus {
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+        }
+    }
+
+    &__item + &__item {
+        @include desk{
+            margin-left: 8px;   
+        }
+    }
+
+    &__btn {
+        font-family: inherit;
+        background: var(--portfolio-filter-button-background);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        text-align: center;
+        cursor: pointer;
+        color: #212121;
+        border-radius: 4px;
+        min-height: 38px;
+        text-align: center;
+        padding: 6px 22px;
+        border: 0;
+      
+        transition-property: color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover &__btn {
+        color: #ffffff;
+        background-color: #2196f3;
+    }
+
+    &__item:hover &__btn {
+        color: #ffffff;
+        background-color: #2196f3;
+    }
+}
+
+.portfolio-list {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    @include tab{
+        margin-top: 30px;
+    }
+
+    @include desk{
+        margin-top: 50px;
+    }
+
+    &__item {
+        border: 1px solid #eeeeee;
+        box-sizing: border-box;
+        width: 100%;
+
+        @include tab{
+            width: calc(100% / 2 - 30px);
+        }
+
+        @include desk{
+            width: calc(100% / 3 - 30px);
+        }
+        
+        margin-left: 30px;
+        margin-bottom: 30px;
+      
+        transition-property: box-shadow, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        &:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+    
+        &:focus .portfolio-overlay {
+            transform: translateY(0);
+        }
+    }
+
+    &__desc {
+        padding: 20px 24px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--third-header-color);
+    }
+
+    &__type {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        margin-top: 4px;
+    }
+  }

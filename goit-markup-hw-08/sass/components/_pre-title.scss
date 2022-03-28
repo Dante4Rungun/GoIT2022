@@ -1,0 +1,13 @@
+.second-header {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    
+    @include desk{
+      font-size: 36px;
+      line-height: 1.16;
+    }
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--second-header-color);
+  }
