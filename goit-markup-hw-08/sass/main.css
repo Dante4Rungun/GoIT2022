@@ -879,6 +879,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   color: var(--header-contacts-text-color);
   -webkit-transition-property: color;
   transition-property: color;
@@ -886,6 +889,14 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__contacts {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 .connect__icon {
