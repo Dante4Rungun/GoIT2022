@@ -181,7 +181,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 302px;
 }
 
 .modal-connect__tel-link {
