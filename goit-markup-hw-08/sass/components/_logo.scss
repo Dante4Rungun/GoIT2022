@@ -1,0 +1,43 @@
+.logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+
+    @include desk{
+        font-size: 26px;
+        line-height: 1.19;
+    }
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    width: 145px;
+
+    &__web {
+        color: var(--logo-color);
+    }
+
+    &__studio {
+        color: #212121;
+    }
+
+    &__studio-footer{
+        color: #ffffff;
+    }
+
+    &__footer {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+
+        @include desk{
+            text-align: start;
+            width: auto;
+        }
+
+        font-style: normal;
+        margin-bottom: 20px;
+      }
+}
+
+
+  
