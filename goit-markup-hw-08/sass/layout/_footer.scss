@@ -1,0 +1,129 @@
+.footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background: #2f303a;
+    padding: 60px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tab{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include desk{
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: baseline;
+    }
+}
+
+.footer-connect {
+    display: flex;
+    flex-direction: column;
+
+    &__adress {
+        text-align: center;
+
+        @include desk{
+            text-align: start;
+        }
+        font-style: normal;
+        color: var(--footer-adress-text-color);
+    }
+
+    &__contacts {
+        font-style: normal;
+        margin-top: 9px;
+        color: var(--footer-contacts-text-color);
+        text-align: center;
+
+        @include desk{
+            text-align: start;
+        }
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            color: var(--contacts-hover-color);
+        }
+    
+        &:focus {
+            color: var(--contacts-hover-color);
+        }
+    }
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 60px 0 0 0;
+
+    @include tab{
+        margin: 0 0 0 165px;
+    }
+
+    @include desk{
+        margin: 0 0 0 70px;
+        display: block;
+    }
+
+    &__join {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      
+        color: #ffffff;
+        text-align: center;
+        
+        @include desk{
+            text-align: start;
+        }
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    &__item + &__item {
+        margin-left: 10px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+      
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            background-color: rgba(33, 150, 243, 1);
+        }
+    
+        &:focus {
+            background-color: rgba(33, 150, 243, 1);
+        } 
+    }
+
+    &__icon {
+        fill: #ffffff;
+    }  
+}
