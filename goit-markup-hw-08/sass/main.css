@@ -815,7 +815,7 @@ a {
 
 .block-bottom {
   position: fixed;
-  bottom: 0;
+  bottom: 48px;
 }
 
 .header {
