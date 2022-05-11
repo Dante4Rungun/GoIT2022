@@ -35,14 +35,11 @@ img {
 
 .gallery {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .item {
   width: 300px;
-}
-
-.item + .item{
-  margin-left: 30px;
 }
 
 .item :hover {
