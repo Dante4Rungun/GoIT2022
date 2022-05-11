@@ -31,8 +31,7 @@ createGallery()
 
 gallery.addEventListener("click", (event) => {
     event.preventDefault()
-    let gallery = new SimpleLightbox('.gallery a');
-    gallery.on('show.simplelightbox', function () {
-        gallery.navText = event.target.getAttribute("alt")
-    });
+    let gallery = new SimpleLightbox('.gallery a',{});
+    gallery.options.captionsData = 'alt'
+    gallery.options.captionDelay = '250ms'
 })
