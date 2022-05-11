@@ -33,7 +33,7 @@ function createGallery() {
         item.append(link)
         items.push(item)
     }
-    console.log(items)
+    gallery.append(...items)
 }
 
 createGallery()
