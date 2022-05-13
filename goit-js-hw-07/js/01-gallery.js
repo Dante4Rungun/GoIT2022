@@ -2,14 +2,17 @@ import { galleryItems } from './gallery-items.js';
 //console.log(galleryItems);
 // Change code below this line
 const gallery = document.querySelector(".gallery")
-//const link = document.querySelector(".gallery__link")
+const link = document.querySelector(".gallery__link")
+
 
 gallery.addEventListener("click", (event)=>{
     event.preventDefault();
-    const instance = basicLightbox.create(`
-    <img src = ${event.target.getAttribute("data-source")}>
-    `)
-    instance.show()
+    if (event.target.hasAttribute('src')){
+        const instance = basicLightbox.create(`
+        <img src = ${event.target.getAttribute("data-source")}>
+        `)
+        instance.show()
+    }
 })
 
 function createGallery() {
