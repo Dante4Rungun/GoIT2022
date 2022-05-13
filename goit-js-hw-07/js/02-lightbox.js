@@ -6,7 +6,7 @@ function createGallery() {
     const items = []
 
     for(const element of galleryItems){
-        const item = document.createElement("div")
+        const item = document.createElement("li")
         item.classList.add("gallery__item")
 
         const link = document.createElement("a")
@@ -25,8 +25,6 @@ function createGallery() {
     gallery.append(...items)
 }
 
-
-
 createGallery()
 
 gallery.addEventListener("click", (event) => {
@@ -34,4 +32,5 @@ gallery.addEventListener("click", (event) => {
     let gallery = new SimpleLightbox('.gallery a',{});
     gallery.options.captionsData = 'alt'
     gallery.options.captionDelay = '250ms'
+
 })
