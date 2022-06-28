@@ -9,9 +9,15 @@ const ingredients = [
 
 const list = document.getElementById("ingredients")
 
-ingredients.map(ingredient => {
-  const elem = document.createElement("li")
-  elem.textContent = ingredient
-  elem.classList.add("item")
-  list.append(elem)
-})
+function createList() {
+  let ingList = []
+  for (const ingredient of ingredients) {
+    const elem = document.createElement('li')
+    elem.textContent = ingredient
+    elem.classList.add("item")
+    ingList.push(elem)
+  }
+  list.append(...ingList)
+}
+
+createList()
